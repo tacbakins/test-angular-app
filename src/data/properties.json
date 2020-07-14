@@ -1,0 +1,39 @@
+[
+  {
+    "Id": 1,
+    "SellRent": 1,
+    "Name": "Test 1",
+    "Type": "Test 1",
+    "Price": 111111
+  },{
+    "Id": 2,
+    "SellRent": 2,
+    "Name": "Test 2",
+    "Type": "Test 2",
+    "Price": 222222
+  },{
+    "Id": 3,
+    "SellRent": 1,
+    "Name": "Test 3",
+    "Type": "Test 3",
+    "Price": 333333
+  },{
+    "Id": 4,
+    "SellRent": 1,
+    "Name": "Test 4",
+    "Type": "Test 4",
+    "Price": 444444
+  },{
+    "Id": 5,
+    "SellRent": 2,
+    "Name": "Test 5",
+    "Type": "Test 5",
+    "Price": 555555
+  },{
+    "Id": 6,
+    "SellRent": 1,
+    "Name": "Test 6",
+    "Type": "Test 6",
+    "Price": 666666
+  }
+]

@@ -1,35 +1,29 @@
 <header>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3 fixed-top">
-        <div class="container-fluid px-0">
-            <img src="../../assets/img/logoRGB-01.jpg" style="padding-right: 13px; margin: -3px 0px;">
-            <a class="navbar-brand" href="#">Angular Test Site</a>
-            <button class="navbar-toggler navbar-right" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <span class="nav-link text-light">
-                            <!-- Welcome
-                            <a class="text-light" asp-area="">@user</a> -->
-                        </span>
-                    </li>
-                </ul>
-                <ul class="navbar-nav flex-grow-1">
-                    <!-- <li class="nav-item">
-                        <a class="nav-link text-light" asp-area="" asp-controller="Employees" asp-action="Employees">Home</a>
-                    </li>
-                    <li class="dropdown">
-                        <a class="nav-link text-light" data-toggle="dropdown" href="#">Employees</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" asp-area="" asp-controller="Employees" asp-action="Employees">Employees</a></li>
-                            <li><a class="dropdown-item" asp-area="" asp-controller="Employees" asp-action="AddEmployee">Add Employee</a></li>
-                            <li><a class="dropdown-item" asp-area="" asp-controller="EmployeeStatus" asp-action="AllEmployees">Employee Status</a></li>
-                        </ul>
-                    </li> -->
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <img src="../../assets/img/logoRGB-01.jpg" style="padding-right: 13px; margin: -3px 0px;">
+    <a class="navbar-brand" routerLink="/">Navigation</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContnent">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active"
+            routerLink="/">Buy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="/rent-property">Rent</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="/add-property">New Listing (Free)</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
 </header>
